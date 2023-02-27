@@ -59,13 +59,32 @@ let random_value = key_values[random_value_index];
 category_span.innerHTML = randome_key_name;
 
 let guess_container = document.querySelector(".guesses");
-let letter_space = Array.from(random_value).forEach(letter => {
+let letter_space = Array.from(random_value);
+letter_space.forEach(letter => {
     let span = document.createElement("span");
     guess_container.appendChild(span);
 });
 
+let game = false;
+
+let letter_guess = document.querySelectorAll(".guesses span");
+let wrong_counter = 0;
+let draw = document.querySelector(".man-draw");
 document.addEventListener("click", function(e){
     if(e.target.className == "letter-btn"){
         e.target.classList.add("clicked");
     }
-})
+    let clicked_btn = e.target.innerHTML.toLowerCase();
+    let word_value = Array.from(random_value.toLowerCase());
+    word_value .forEach((w, i) => {
+        if(clicked_btn == w){
+            game = true;
+            letter_guess.forEach((span, sIndex) => {
+                if(i == sIndex){
+                    span.innerHTML = clicked_btn;
+                }
+            });
+        }
+    });
+    
+});
