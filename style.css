@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: 20px auto;
+    width: 100%;    
+}
+.draw-section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}   
+.game-info{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.game-info .game-name{
+    font-size: 100px;
+    text-decoration: underline;
+}
+.game-info .category{
+    text-align: right;
+    font-size: 50px;
+}
+.game-info .category span{
+    text-transform: capitalize;
+    color: red;
+    font-weight: bolder;
+}
+.man-draw{
+    background-color: whitesmoke;
+    padding: 20px;
+    height: 324px;
+    width: 20%;
+}
+.man-draw .the-draw{
+    width: 60px;
+    height: 280px;
+    position: absolute;
+    margin: auto;
+}
+.man-draw .stand{
+    content: '';
+    position: absolute;
+    width: 10px;
+    background-color: black;
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+} 
+.man-draw .hang::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: black;
+    width: 100%;
+    left: 40px;
+    top: 30px;
+} 
+.man-draw .hang::after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    background-color: black;
+    width: 200%;
+    left: 30px;
+    top: 15px;
+} 
+.man-draw .rope{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    position: absolute;
+    left: 95px;
+    top: 45px;
+    border: 4px dashed black;
+} 
+.man-draw .man .head{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 4px solid black;
+    position: absolute;
+    left: 106px;
+    top: 63px;
+}
+.man-draw .man .body{
+    position: absolute;
+    background-color: black;
+    width: 4px;
+    height: 110px;
+    top: 109px;
+    left: 130px;
+}
+.man-draw .man .arms::after{
+    left: 87px;
+    transform: rotate(40deg);
+}
+.man-draw .man .arms::before{
+    left: 130px;
+    transform: rotate(-30deg);
+}
+.man-draw .man .arms::before,
+.man-draw .man .arms::after{
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: black;
+    top: 130px;
+}
+.man-draw .man .legs::after{
+    left: 87px;
+    transform: rotate(326deg);
+}
+.man-draw .man .legs::before{
+    left: 127px;
+    transform: rotate(38deg);
+}
+.man-draw .man .legs::before,
+.man-draw .man .legs::after{
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: black;
+    top: 230px;
+}
+.letters-section{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.letters{
+    padding: 15px;
+    text-align: center;
+}
+.letters .letter-btn{
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 12px;
+    border-radius: 10%;
+}
+
