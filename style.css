@@ -133,7 +133,6 @@
     top: 230px;
 }
 .letters-section{
-    border: 1px solid black;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -156,5 +155,34 @@
     cursor: pointer;
     margin-bottom: 12px;
     border-radius: 10%;
+}
+.guess-section{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guesses{
+    margin: 10px auto;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.guesses span{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin-right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: bold;
+    border-bottom: 4px solid black;
+}
+.clicked{
+    opacity: .2;
+    pointer-events: none;
 }
 
