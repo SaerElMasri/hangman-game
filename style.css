@@ -38,136 +38,128 @@
     height: 324px;
     width: 20%;
 }
+.man-draw.wrong-1 .stand{
+    background-image: url(assets/stand.svg);
+}
+.man-draw.wrong-2 .hang{
+    background-image: url(assets/stand.svg);
+}
+.man-draw.wrong-3 .rope{
+    background-image: url(assets/rope.svg);
+}
+.man-draw.wrong-4 .head{
+    background-image: url(assets/head.svg);
+}
+.man-draw.wrong-5 .body{
+    background-image: url(assets/body.svg);
+}
+.man-draw.wrong-6 .left{
+    background-color: black;
+}
+.man-draw.wrong-7 .right{
+    background-color: black;
+}
+.man-draw.wrong-8 .left-l{
+    background-color: black;
+}
+.man-draw.wrong-9 .right-l{
+    background-color: black;
+}
 .man-draw .the-draw{
     width: 60px;
     height: 280px;
     position: absolute;
     margin: auto;
 }
-.man-draw.wrong1 .the-draw{
-    display: block;
-}
 .man-draw .stand{
-    content: '';
     position: absolute;
     width: 10px;
-    background-color: black;
     height: 100%;
     left: 50%;
     margin-left: -2px;
 } 
-.man-draw.wrong2 .stand{
-    display: block;
-}
 .man-draw .hang{
-    display: none;
-}
-.man-draw.wrong3 .hang{
-    display: block;
-}
-.man-draw .hang::before{
-    content: '';
     position: absolute;
-    width: 4px;
-    background-color: black;
-    width: 100%;
-    left: 40px;
-    top: 30px;
-} 
-.man-draw .hang::after{
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 10px;
-    background-color: black;
-    width: 200%;
-    left: 30px;
-    top: 15px;
+    height: 15px;
+    left: 33px;
+    top: 11px;
+    width: 150px;  
+    transform: rotate(30de);
 } 
 .man-draw .rope{
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
-    left: 95px;
-    top: 45px;
-    border: 4px dashed black;
-    display: none;
-} 
-.man-draw.wrong4 .rope{
-    display: block;
+    width: 18px;
+    height: 50px;
+    height: 37px;
+    left: 130px;
+    top: 17px;
 }
 .man-draw .man .head{
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    border: 4px solid black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
     position: absolute;
     left: 106px;
-    top: 63px;
-    display: none;
-}
-.man-draw.wrong5 .head{
-    display: block;
+    top: 40px;
 }
 .man-draw .man .body{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
-    background-color: black;
-    width: 4px;
-    height: 110px;
-    top: 109px;
-    left: 130px;
-    display: none;
+    width: 21px;
+    height: 94px;
+    top: 101px;
+    left: 132px;
 }
-.man-draw.wrong6 .body{
-    display: block;
-}
-.man-draw .man .arms{
-    display: none;
-}
-.man-draw.wrong7 .arms{
-    display: block;
-}
-.man-draw .man .arms::after{
-    left: 87px;
-    transform: rotate(40deg);
-}
-.man-draw .man .arms::before{
-    left: 130px;
-    transform: rotate(-30deg);
-}
-.man-draw .man .arms::before,
-.man-draw .man .arms::after{
-    content: '';
-    width: 50px;
+.left{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
     position: absolute;
-    height: 4px;
-    background-color: black;
-    top: 130px;
+    height: 10px;
+    top: 138px;
+    left: 86px;
+    transform: rotate(297deg);
 }
-.man-draw .man .legs{
-    display: none;
-}
-.man-draw.wrong8 .legs{
-    display: block;
-}
-.man-draw .man .legs::after{
-    left: 87px;
-    transform: rotate(326deg);
-}
-.man-draw .man .legs::before{
-    left: 127px;
-    transform: rotate(38deg);
-}
-.man-draw .man .legs::before,
-.man-draw .man .legs::after{
-    content: '';
-    width: 50px;
+.left-l{
+    background-position: center;
+    background-size: cover;
+    width: 70px;
     position: absolute;
-    height: 4px;
-    background-color: black;
-    top: 230px;
+    height: 10px;
+    top: 205px;
+    left: 86px;
+    transform: rotate(297deg);
 }
+.right{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    position: absolute;
+    height: 10px;
+    top: 132px;
+    left: 129px;
+    transform: rotate(68deg);
+}   
+.right-l{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    position: absolute;
+    height: 10px;
+    top: 214px;
+    left: 125px;
+    transform: rotate(68deg);
+}   
 
 .letters-section{
     width: 100%;
