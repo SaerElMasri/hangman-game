@@ -44,6 +44,9 @@
     position: absolute;
     margin: auto;
 }
+.man-draw.wrong1 .the-draw{
+    display: block;
+}
 .man-draw .stand{
     content: '';
     position: absolute;
@@ -53,6 +56,15 @@
     left: 50%;
     margin-left: -2px;
 } 
+.man-draw.wrong2 .stand{
+    display: block;
+}
+.man-draw .hang{
+    display: none;
+}
+.man-draw.wrong3 .hang{
+    display: block;
+}
 .man-draw .hang::before{
     content: '';
     position: absolute;
@@ -80,7 +92,11 @@
     left: 95px;
     top: 45px;
     border: 4px dashed black;
+    display: none;
 } 
+.man-draw.wrong4 .rope{
+    display: block;
+}
 .man-draw .man .head{
     width: 50px;
     height: 50px;
@@ -89,6 +105,10 @@
     position: absolute;
     left: 106px;
     top: 63px;
+    display: none;
+}
+.man-draw.wrong5 .head{
+    display: block;
 }
 .man-draw .man .body{
     position: absolute;
@@ -97,6 +117,16 @@
     height: 110px;
     top: 109px;
     left: 130px;
+    display: none;
+}
+.man-draw.wrong6 .body{
+    display: block;
+}
+.man-draw .man .arms{
+    display: none;
+}
+.man-draw.wrong7 .arms{
+    display: block;
 }
 .man-draw .man .arms::after{
     left: 87px;
@@ -115,6 +145,12 @@
     background-color: black;
     top: 130px;
 }
+.man-draw .man .legs{
+    display: none;
+}
+.man-draw.wrong8 .legs{
+    display: block;
+}
 .man-draw .man .legs::after{
     left: 87px;
     transform: rotate(326deg);
@@ -132,6 +168,7 @@
     background-color: black;
     top: 230px;
 }
+
 .letters-section{
     width: 100%;
     display: flex;
@@ -155,6 +192,7 @@
     cursor: pointer;
     margin-bottom: 12px;
     border-radius: 10%;
+    
 }
 .guess-section{
     border: 1px solid black;
@@ -162,6 +200,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .guesses{
     margin: 10px auto;
@@ -183,6 +222,9 @@
 }
 .clicked{
     opacity: .2;
+    pointer-events: none;
+}
+.game-over{
     pointer-events: none;
 }
 

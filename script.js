@@ -65,12 +65,11 @@ letter_space.forEach(letter => {
     guess_container.appendChild(span);
 });
 
-let game = false;
-
 let letter_guess = document.querySelectorAll(".guesses span");
 let wrong_counter = 0;
 let draw = document.querySelector(".man-draw");
 document.addEventListener("click", function(e){
+    let game = false;
     if(e.target.className == "letter-btn"){
         e.target.classList.add("clicked");
     }
@@ -86,5 +85,12 @@ document.addEventListener("click", function(e){
             });
         }
     });
-    
+    console.log(game);
+    if(game !== true){
+        wrong_counter++;
+        draw.classList.add(`wrong-${wrong_counter}`);
+        if(wrong_counter == 8){
+            letter_container.classList.add("game-over");
+        }
+    }
 });
